@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html>
+  
+<head> 
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+	
+		body {
+			background-image: url("login2.jpeg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			overflow: hidden;
+		}
+		a {
+			color: #000000;
+			
+		}
+		a:visited {
+			color: #000000;
+		}
+		
+		
+		.navbar {
+			background-color: #241571;
+		}
+		
+		.form-gp {
+			margin-top: 0px;
+		}
+		.reg, .login {
+			
+			
+			margin-top: 140px;
+		}
+		
+		.transbox {
+			background-color: #dddddd;
+			border-radius: 15px;
+			opacity: 0.9;
+			padding: 30px;
+		}
+		
+		.about {
+			margin-top: 150px;
+			
+		}
+		
+		.tab2 {
+            tab-size: 4;
+        }
+		footer {
+			position:absolute;
+		    bottom:0;
+		    width:100%;
+		    height:100px;
+			padding: 3px;
+		}
+		
+	</style>
+
+    
+    <title> 
+        GeroCare - Login
+    </title>
+	 
+</head> 
+  
+<body> 
+	<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="home.html">GeroCare</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="home.html">Home</a>
+			  <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+			  <a class="nav-item nav-link" href="eld.html">Order Services</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="login.html">Login</a>
+              <a class="nav-item nav-link" href="register.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+       
+	   
+	<div class="reg">
+	<div class="transbox">
+	<form method = "POST" action="">
+		<!--{{ form.hidden_tag() }}-->
+		<fieldset class="form-gp">
+			<legend class="border-bottom mb-4">Existing User Sign In</legend>
+			
+				
+		<label for="uname">Username</label><br>
+		<input type="text" id="uname" name="uname"><br><br>
+		<label for="pw">Password</label><br>
+		<input type="text" id="pw" name="pw"><br><br>
+		
+		</fieldset>
+		
+		<input type="submit" value="Submit">
+		
+	</form>
+	
+	
+	<div class="hvac">
+		<small class="text-muted">New User? <a class="ml-2" href="register.html">Sign Up Now</a>
+		</small>	
+	</div>
+	<small class="text-muted ml-2">
+		<a href='#'>Forgot Password?</a>
+	</small>
+		
+    </div><br><br><br>
+   
+   <footer>
+		<hr>
+		<p>Developed by GeroCare</p>
+   </footer>
+   </div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body> 
+  
+</html>

@@ -1,0 +1,282 @@
+<!doctype html>
+
+<html>
+  
+<head> 
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+	
+		body {
+			background-color:#F2F3F4;
+		}
+		a {
+			color: #000000;
+			
+		}
+		a:visited {
+			color: #000000;
+		}
+		
+		.home-content{
+			
+			margin-top: 80px;
+		}
+		
+		.navbar {
+			background-color: #241571;
+		}
+		.post {
+			border: 5px outset #000066;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.form-gp {
+			margin-top: 80px;
+			margin-left: 200px;
+		}
+		.eld, .login {
+			margin-top: 160px;
+			position:relative;
+		}
+		.content-section {
+			margin-top: 120px;
+			padding-right: 20px;
+			position: relative;
+
+		}
+		.about {
+			margin-top: 150px;
+			
+		}
+		
+		.tab2 {
+            tab-size: 4;
+        }
+		
+		.tabs {
+			display: flex;
+			flex-direction: column;
+			
+		}
+		
+		.tabs__users {
+			width: 550px;
+			flex-shrink: 0;
+			padding: 20px;
+		
+		}
+		
+		.tabs__button {
+			
+			padding: 10px;
+			background: #eeebf0;
+			border-color: black;
+			border-radius: 10px;
+			width=100%;
+			cursor: pointer;
+		}
+		
+		
+		
+		.tabs__button--active {
+			font-weight: bold;
+			
+		}
+		
+		.tabs__content {
+			padding: 15px;
+			font-size: 0.8rem;
+			display: none;
+		}
+		
+		.tabs__content--active {
+			display: block;
+		}
+		
+		footer {
+			position:relative;
+		    bottom:0;
+		    width:100%;
+		    height:100px;
+			padding: 3px;
+			
+		}
+		
+	</style>
+
+    
+    <title> 
+        GeroCare - Order Services
+    </title>
+	
+</head> 
+  
+<body> 
+	<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="home.html">GeroCare</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="home.html">Home</a>
+			  <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+			  <a class="nav-item nav-link" href="eld.html">Order Services</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="login.html">Login</a>
+              <a class="nav-item nav-link" href="register.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+    <div class="row">
+	<div class="tabs">
+    <div>   
+	<h3 style="padding-top:140px">Doorstep Delivery of Goods</h3>       
+	</div>
+	
+	
+	
+	
+	<form method = "POST" action="">
+		<!--{{ form.hidden_tag() }}-->
+		<fieldset class="form-gp">
+			
+		<label for="ess">Choose a service:</label>
+		
+		<div class="tabs__topbar">
+		  <select id="ess" name="ess">
+			<option style="font-color:grey">Select from Drop-down</option>
+			<option value="Hospital" class="tabs__button" data-for-tab="1">Buy Goods</option>
+			<option value="Store" class="tabs__button" data-for-tab="2">Pick-and-Drop</option>
+		  </select><br><br>
+  		</div>
+		
+		<label for="wd">Store Name</label><br>
+		<input type="text" id="wd" name="wd"><br><br>
+		<label for="wd">Store Location</label><br>
+		<input type="text" id="wd" name="wd"><br><br>
+		<label for="wd">Nearby Landmark</label><br>
+		<input type="text" id="wd" name="wd"><br><br>
+		<label for="wd">Pickup Time</label><br>
+		<input type="text" id="wd" name="wd"><br><br>
+		</fieldset>
+	</form>
+	
+		<div class="tabs__content form-gp" data-tab="1">
+			<form>
+				<label for="good">Product Name</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<label for="good">Product Description</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<label for="good">Required Quantity</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<select class="paymeth">
+					<option style="font-color:grey">Payment Method</option>
+					<option value="upi">Pay by UPI/ Wallet</option>
+					<option value="cash">Pay on Receipt (Cash)</option>
+			    </select><br><br>
+				
+				<input type="submit" value="Submit"><br>
+				<div class="hvac">
+					<small class="text-muted"> <a class="ml-2" href="eld.html">Choose a Different Service</a>
+					</small>	
+				</div>
+			</form>
+		</div>
+		
+		
+		<div class="tabs__content form-gp" data-tab="2">
+			<form>
+				
+				<label for="good">Product Name</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<label for="good">Product Description</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<label for="good">Quantity</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<label for="good">Final Bill Amount (in INR)</label><br>
+				<input type="text" id="gd" name="gd"><br><br>
+				<select class="paymeth">
+					<option style="font-color:grey">Payment Method</option>
+					<option value="upi">Completed Payment</option>
+					<option value="upi">Pay by UPI/ Wallet</option>
+					<option value="cash">Pay on Receipt (Cash)</option>
+			    </select><br><br>
+				
+				<input type="submit" value="Submit"><br>
+				<div class="hvac">
+					<small class="text-muted"> <a class="ml-2" href="eld.html">Choose a Different Service</a>
+					</small>	
+				</div>
+			</form>
+		</div>
+		
+	
+	
+	</div>
+	
+ </div><br><br><br>
+   
+   <footer>
+		<hr>
+		<p>Developed by GeroCare</p>
+   </footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		function setupTabs () {
+			document.querySelectorAll("#ess").forEach(button => {
+				button.addEventListener("change", () => {
+					const topBar = button.parentElement;
+					const tabsContainer = topBar.parentElement.parentElement.parentElement;
+					const tabNumber = button.options[button.selectedIndex].dataset.forTab;
+					console.log(tabNumber);
+					console.log(tabsContainer);
+					const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab=\"${tabNumber}\"]`);
+					
+					topBar.querySelectorAll(".tabs__button").forEach(button => {
+						button.classList.remove("tabs__button--active");
+					});
+					
+					tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+						tab.classList.remove("tabs__content--active");
+					});
+					
+					button.classList.add("tabs__button--active");
+					tabToActivate.classList.add("tabs__content--active");
+					
+				});
+			});
+		}
+
+
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			setupTabs();
+			
+			document.querySelectorAll(".tabs").forEach(tabsContainer => {
+				tabsContainer.querySelector(".tabs__topbar .tabs__button").click();
+			});
+		});
+		
+	</script>
+
+</body> 
+  
+</html> 

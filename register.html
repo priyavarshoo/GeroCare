@@ -1,0 +1,387 @@
+<!doctype html>
+
+<html>
+  
+<head> 
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+	
+		body {
+			background-image: url("reg3.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		a {
+			color: #000000;
+			
+		}
+		a:visited {
+			color: #000000;
+		}
+		
+		.home-content{
+			
+			margin-top: 80px;
+		}
+		
+		.navbar {
+			background-color: #241571;
+		}
+		
+		.form-gp {
+			margin-top: 80px;
+		}
+		.reg, .login {
+			margin-top: 80px;
+			
+			position: absolute;
+		}
+		
+		.about {
+			margin-top: 150px;
+			
+		}
+		
+		.tab2 {
+            tab-size: 4;
+        }
+		
+		.hvac {
+			padding-top: 20px;
+		}
+		
+		.tabs {
+			margin-top: 100px;
+			margin-left: 15%;
+			margin-bottom: 30px;
+			background-color: #dddddd;
+			border-radius: 15px;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			opacity: 0.9;
+			justify-content: space-between;
+			
+		}
+		
+		.tabs__users {
+			width: 550px;
+			flex-shrink: 0;
+			padding: 20px;
+		
+		}
+		
+		.tabs__button {
+			
+			padding: 10px;
+			background: #eeebf0;
+			border-color: black;
+			border-radius: 10px;
+			box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+			width=100%;
+			cursor: pointer;
+		}
+		
+		
+		
+		.tabs__button--active {
+			font-weight: bold;
+			border-right: 2px solid #241571;
+			background: #d1bdc0;
+		}
+		
+		.tabs__content {
+			padding: 15px;
+			font-size: 0.8rem;
+			display: none;
+		}
+		
+		.tabs__content--active {
+			display: block;
+		}
+		
+		footer {
+			position:relative;
+		    bottom:0;
+		    width:100%;
+		    height:100px;
+			padding: 3px;
+			
+		}
+		
+	</style>
+
+    <title> 
+        GeroCare - Sign Up
+    </title>
+	
+</head> 
+  
+<body> 
+	<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="home.html">GeroCare</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="home.html">Home</a>
+			  <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+			  <a class="nav-item nav-link" href="eld.html">Order Services</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="login.html">Login</a>
+              <a class="nav-item nav-link" href="register.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+       
+	   
+	<div class="tabs">
+		<div class="heading_reg">
+			<legend class="border-bottom mb-4">Join the Cause Today</legend>
+		</div>	
+		
+		<div class="tabs__topbar">
+			<button class="tabs__button" data-for-tab="1" style="tab-size:4">Senior Citizen</button>
+			
+			<button class="tabs__button" data-for-tab="2" style="tab-size:4">Volunteer</button>
+		</div>
+		
+	<div class="tabs__content" data-tab="1">
+	
+		
+		<form method = "POST" action="">
+			<!--{{ form.hidden_tag() }}-->
+			<fieldset class="form-gp">
+			
+			<h4>Senior Citizen Details</h4><br>
+			<label for="fname">First name</label><br>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Last name</label><br>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="dob">Date of Birth</label><br>
+			<input type="text" id="dob" name="dob"><br><br>
+			<label for="gd">Gender</label><br>
+			<input type="radio" id="s" name="exps" value="Yes">
+			<label for="Yes">Female	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">Male	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">Others	</label><br><br>
+			<label for="phone">Phone Number</label><br>
+			<input type="text" id="phone" name="phone"><br><br>
+			<label for="email">Email Address</label><br>
+			<input type="text" id="email" name="email"><br><br>
+			<label for="loc">House Address</label><br>
+			<input type="text" id="loc" name="loc"><br><br>
+			<label for="myfile">Previous Health Records (Upload file)</label><br>
+			<input type="file" id="myfile" name="myfile"><br><br>
+			
+			<br><br><h4>Working Adult Details</h4><br>
+			<label for="fname">First name</label><br>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Last name</label><br>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="dob">Date of Birth</label><br>
+			<input type="text" id="dob" name="dob"><br><br>
+			<label for="gd">Gender</label><br>
+			<input type="radio" id="s" name="exps" value="Yes">
+			<label for="Yes">Female	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">Male	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">Others	</label><br><br>
+			<label for="phone">Phone Number</label><br>
+			<input type="text" id="phone" name="phone"><br><br>
+			<label for="email">Email Address</label><br>
+			<input type="text" id="email" name="email"><br><br>
+			<label for="loc">House Address</label><br>
+			<input type="text" id="loc" name="loc"><br><br>
+			<label for="dob">Date of Birth</label><br>
+			<input type="text" id="dob" name="dob"><br><br>
+			
+			<br><br><h4>Requirements</h4><br>
+			<label for="fname">Preferred Age Group of Volunteer</label><br>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Preferred Gender of Volunteer</label><br>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="cat">Category of Care Required</label><br>
+			  <input type="checkbox" id="vehicle1" name="vehicle1" value="Essential">
+			  <label for="vehicle1">	Accompany for Essential Services</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Non-Essential">
+			  <label for="vehicle2">	Accompany for Recreational Activities</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Non-Essential">
+			  <label for="vehicle2">	In-House Care</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Non-Essential">
+			  <label for="vehicle2">	Doorstep Delivery of Goods</label><br><br>
+			  
+			
+			<br><br><h4>Account Setup</h4><br>
+			<label for="uname">Username</label><br>
+			<input type="text" id="uname" name="uname"><br><br>
+			<label for="pw">Password</label><br>
+			<input type="text" id="pw" name="pw"><br><br>
+			
+			</fieldset>
+			
+			<input type="submit" value="Submit">
+			
+		</form>
+	</div>
+		
+	<div class="tabs__content" data-tab="2">
+	
+		
+		<form method = "POST" action="">
+			<!--{{ form.hidden_tag() }}-->
+			<fieldset class="form-gp">
+		
+			<h4>Details of Volunteer</h4>
+			<p>* Volunteers from an institution have to register individually</p><br>
+			<label for="fname">First name</label><br>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Last name</label><br>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="dob">Date of Birth</label><br>
+			<input type="text" id="dob" name="dob"><br><br>
+			<label for="gd">Gender</label><br>
+			<input type="radio" id="s" name="exps" value="Yes">
+			<label for="Yes">Female	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">Male	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">Others	</label><br><br>
+			<label for="phone">Phone Number</label><br>
+			<input type="text" id="phone" name="phone"><br><br>
+			<label for="email">Email Address</label><br>
+			<input type="text" id="email" name="email"><br><br>
+			<label for="loc">Location</label><br>
+			<input type="text" id="loc" name="loc"><br><br>
+			
+			<label for="loc">Prior Experience</label><br>
+			<input type="radio" id="s" name="exps" value="Yes">
+			<label for="Yes">Yes	</label>
+			<input type="radio" id="s" name="exps" value="No">
+			<label for="No">No	</label><br><br><br>
+			<h5>In case of Prior Experience, provide details of Organization</h5><br>
+			
+			<label for="norg">Name of Organization</label><br>
+			<input type="text" id="norg" name="norg"><br><br>
+			<label for="worg">Website of Organization</label><br>
+			<input type="text" id="worg" name="worg"><br><br>
+			<label for="yrs">Number of Volunteer Years</label><br>
+			<input type="text" id="yrs" name="yrs"><br><br>
+			<label for="myfile">Volunteer Certificate (Upload file)</label><br>
+			<input type="file" id="myfile" name="myfile"><br><br>
+			<label for="nmg">Name of Manager</label><br>
+			<input type="text" id="nmg" name="nmg"><br><br>
+			<label for="pmg">Phone Number</label><br>
+			<input type="text" id="pmg" name="pmg"><br><br>
+			<label for="emg">Email Address</label><br>
+			<input type="text" id="emg" name="emg"><br><br>
+			
+			
+			<label for="cat">Category of Care</label><br>
+			  <input type="checkbox" id="vehicle1" name="vehicle1" value="Essential">
+			  <label for="vehicle1">	Accompany for Essential Services</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Non-Essential">
+			  <label for="vehicle2">	Accompany for Recreational Activities</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Non-Essential">
+			  <label for="vehicle2">	In-House Care</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Non-Essential">
+			  <label for="vehicle2">	Doorstep Delivery of Goods</label><br><br>
+			
+			<label for="lvl">Level of Care Provided</label><br>
+			<input type="radio" id="min" name="levl" value="Minimal">
+			<label for="Minimal">Low</label>
+			<input type="radio" id="med" name="levl" value="Medium">
+			<label for="Medium">Moderate</label>
+			<input type="radio" id="ext" name="levl" value="Extensive">
+			<label for="Extensive">High</label><br>	<br>
+			
+			<label for="wd">Availability on Weekdays (Monday-Friday)</label><br>
+			<input type="text" id="wd" name="wd"><br><br>
+			<label for="we">Availability on Weekends (Saturday-Sunday)</label><br>
+			<input type="text" id="we" name="we"><br><br>
+			<label for="uname">Username</label><br>
+			<input type="text" id="uname" name="uname"><br><br>
+			<label for="pw">Password</label><br>
+			<input type="text" id="pw" name="pw"><br><br>
+			
+			</fieldset>
+			
+			<input type="submit" value="Submit">
+			
+		</form>
+	</div>
+	
+	<div class="hvac">
+		<small class="text-muted">
+			Existing User? <a class="ml-2" href="login.html">Sign In</a>
+		</small>	
+	</div>
+   </div><br><br><br>
+   
+   <footer>
+		<hr>
+		<p>Developed by GeroCare</p>
+   </footer>
+   </div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<script>
+		function setupTabs () {
+			document.querySelectorAll(".tabs__button").forEach(button => {
+				button.addEventListener("click", () => {
+					const topBar = button.parentElement;
+					const tabsContainer = topBar.parentElement;
+					const tabNumber = button.dataset.forTab;
+					const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab=\"${tabNumber}\"]`);
+					
+					topBar.querySelectorAll(".tabs__button").forEach(button => {
+						button.classList.remove("tabs__button--active");
+					});
+					
+					tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+						tab.classList.remove("tabs__content--active");
+					});
+					
+					button.classList.add("tabs__button--active");
+					tabToActivate.classList.add("tabs__content--active");
+					
+				});
+			});
+		}	
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			setupTabs();
+			
+			document.querySelectorAll(".tabs").forEach(tabsContainer => {
+				tabsContainer.querySelector(".tabs__topbar .tabs__button").click();
+			});
+		});
+		
+	</script>
+	
+
+</body> 
+  
+</html> 

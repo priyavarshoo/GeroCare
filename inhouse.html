@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html>
+  
+<head> 
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+	
+		body {
+			background-color:#F2F3F4;
+			overflow: hidden;
+		}
+		a {
+			color: #000000;
+			
+		}
+		a:visited {
+			color: #000000;
+		}
+		
+		.home-content{
+			
+			margin-top: 80px;
+		}
+		
+		.navbar {
+			background-color: #241571;
+		}
+		.post {
+			border: 5px outset #000066;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.form-gp {
+			margin-top: 80px;
+		}
+		.eld, .login {
+			margin-top: 160px;
+			position:relative;
+		}
+		.content-section {
+			margin-top: 120px;
+		
+			padding-right: 20px;
+			position: relative;
+		
+		}
+		.about {
+			margin-top: 150px;
+			
+		}
+		
+		.tab2 {
+            tab-size: 4;
+        }
+		footer {
+			position:absolute;
+		    bottom:0;
+		    width:100%;
+		    height:100px;
+			padding: 3px;
+		}
+		
+	</style>
+
+    <title> 
+        GeroCare - Order Services
+    </title>
+	
+</head> 
+  
+<body> 
+	<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="home.html">GeroCare</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="home.html">Home</a>
+			  <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+			  <a class="nav-item nav-link" href="eld.html">Order Services</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="login.html">Login</a>
+              <a class="nav-item nav-link" href="register.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+    <div class="row">
+    <div>   
+	<h3 style="padding-top:140px">In-House Care</h3>       
+	</div>
+	<br><br>
+	
+	<div class="eld">
+	
+	<form method = "POST" action="">
+		<!--{{ form.hidden_tag() }}-->
+		<fieldset class="form-gp">
+			
+		<label for="ess">Choose a service:</label>
+		  <select id="ess" name="ess">
+			<option style="font-color:grey">Select from Drop-down</option>
+			<option value="Hospital">Bedside Care</option>
+			<option value="Store">Household Chores</option>
+			<option value="Store">Guard the House</option>
+		  </select><br><br>
+  		
+		<label for="lvl">Level of Care Required</label><br>
+		<input type="radio" id="min" name="levl" value="Minimal">
+	    <label for="Minimal">Low</label>
+	    <input type="radio" id="med" name="levl" value="Medium">
+  	    <label for="Medium">Moderate</label>
+	    <input type="radio" id="ext" name="levl" value="Extensive">
+	    <label for="Extensive">High</label><br>	<br>
+		
+		<label for="wd">Estimated Time Slot</label><br>
+		<input type="text" id="wd" name="wd"><br><br>
+		
+		
+		</fieldset>
+		
+		<input type="submit" value="Submit"><br>
+		<div class="hvac">
+		<small class="text-muted"> <a class="ml-2" href="eld.html">Choose a Different Service</a>
+		</small>	
+	</div>
+		
+	</form>
+	
+	</div>
+	
+    </div><br><br><br>
+   
+   <footer>
+		<hr>
+		<p>Developed by GeroCare</p>
+   </footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body> 
+  
+</html> 
